@@ -1,5 +1,6 @@
 # Zabbix-Agent-UpdateScript
 Script for fast update Zabbix Agent on Ubuntu only.
+Show installed version, get latest Zabbix agent version, allow to set own zabbix agent version for installation
 
 1. Run command below
 ```sh
