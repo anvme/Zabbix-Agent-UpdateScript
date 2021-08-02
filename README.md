@@ -1,4 +1,7 @@
 # Zabbix-Agent-UpdateScript
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f7c07356783f4f1b82a6c6d845712199)](https://app.codacy.com/gh/anvme/Zabbix-Agent-UpdateScript?utm_source=github.com&utm_medium=referral&utm_content=anvme/Zabbix-Agent-UpdateScript&utm_campaign=Badge_Grade_Settings)
+
 Script for fast update Zabbix Agent on Ubuntu only.
 Show installed version, get latest Zabbix agent version, allow to set own zabbix agent version for installation
 
