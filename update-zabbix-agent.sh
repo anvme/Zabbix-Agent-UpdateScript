@@ -19,14 +19,14 @@ then
     echo '================================Start download========================================'
     f=zabbix-release_$v-1+ubuntu$(lsb_release -sr)_all.deb
     release=https://repo.zabbix.com/zabbix/$v/ubuntu/pool/main/z/zabbix-release/zabbix-release_$v-1+ubuntu$(lsb_release -sr)_all.deb
-    wget $release -O $f
+    wget "$release" -O "$f"
     #Stop zabbix
     echo '================================Stop zabbix========================================'
     systemctl stop zabbix-agent
     #Install new version repo
     echo '================================Install new version repo========================================'
-    dpkg -i $f
-    rm $f
+    dpkg -i "$f"
+    rm "$f"
     apt-get update
     systemctl is-active --quiet zabbix-agent && echo "Zabbix-agent is running, press Ctrl+C to stop" && sleep 15 || echo "Zabbix-agent is NOT running"
     #Install new zabbix agent
